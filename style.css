@@ -1,0 +1,112 @@
+body  {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: gray;
+    
+}
+
+.controls {
+    margin-bottom: 20px;
+}   
+
+#pixel-canvas {
+    display:grid;
+
+    grid-template-columns:repeat(var(--grid-rows),20px);
+    grid-template-rows:repeat(var(--grid-rows),20px);
+
+    
+    user-select: none;  
+}
+
+.pixel {
+    width:20px;
+    height:20px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.pixLabel {
+    width:20px;
+    height:20px;
+    background-color: white;
+    cursor: pointer;
+}
+
+#imageUpload {
+    position: fixed;
+    z-index: 1000;
+
+    /* FOR OLD BROWSERS */
+    top: 0vh;
+    right: 0vh;
+
+    /* FOR NEW DYNAMIC BROWSERS */
+    top: 0dvh;
+    right: 0dvh;
+}
+
+#colorPicker {
+    position: fixed;
+    z-index: 1000;
+    
+    /* FOR OLD BROWSERS */
+    top: 0vh;
+    left: 7vh;
+
+    /* FOR NEW DYNAMIC BROWSERS */
+    top: 0dvh;
+    left: 7dvh;
+}
+
+#eraser {
+    position: fixed;
+    z-index: 1000;
+    
+    /* FOR OLD BROWSERS */
+    top: 0vh;
+    left: 14vh;
+
+    /* FOR NEW DYNAMIC BROWSERS */
+    top: 0dvh;
+    left: 14dvh;
+}
+
+#pencil {
+    position: fixed;
+    z-index: 1000;
+    
+    /* FOR OLD BROWSERS */
+    top: 0vh;
+    left: 0vh;
+
+    /* FOR NEW DYNAMIC BROWSERS */
+    top: 0dvh;
+    left: 0dvh;
+}
+
+#showHideControls {
+    position: fixed;
+    z-index: 1000;
+    
+    /* FOR OLD BROWSERS */
+    top: 0vh;
+    right: 25vh;
+
+    /* FOR NEW DYNAMIC BROWSERS */
+    top: 0dvh;
+    right: 28dvh;
+}
+
+
+
+#tempMobile {
+    position: fixed;
+    bottom: 5vh;
+    left: 5vh;
+    bottom: 5dvh;
+    left: 5dvh;
+    z-index: 1000;
+}
