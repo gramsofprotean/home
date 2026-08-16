@@ -7,6 +7,8 @@ body  {
     
 }
 
+
+
 /* cross-stitch-designer section */
 .cross-stitch-designer-page .controls {
 
@@ -112,6 +114,9 @@ body  {
     z-index: 1000;
 }
 
+.recipe-page {
+    background-image: url("images/woodtexture.jpg");
+}
 
 .recipe-page #top-container {
     display: flex;
@@ -121,53 +126,79 @@ body  {
 }
 
 .recipe-page #title-and-info {
+    flex: 1;
+    background-image: url('images/ripped-pattern2.png');
+    background-size: cover;
     width: 100%;
     height: 100%;
     box-sizing: border-box;
-    margin-left: 5%;
+    margin-left: 10%;
+}
+
+.recipe-page .titleinfoclass {
+    color: rgb(0, 0, 0);
+    scale: 90%;
+    font-family: 'Brush Script MT', cursive;
+    text-shadow: 1px 1px 2px #fffbfb;
+}
+
+.recipe-page #info-image-padding {
+    flex: 1;
 }
 
 .recipe-page #title-photo {
+    border-radius: 15px;
+    flex: 1;
     width: 100%;
     height: 100%;
-    margin-right: 5%;
-    background-color: rgb(253, 252, 252);
+    margin-right: 10%;
+    background-color: #c4b1a8;
 }
 
 .recipe-page #photo {
+    border-radius: 15px;
     width: 100%;
     height: 100%;
     object-fit: cover;
-    scale: 95%;
+    scale: 97%;
     
 }
 
 .recipe-page #dynamic-recipe {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9), 0 6px 20px 0 rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
     width: 80vw;
     background-image: url(images/paper-pattern.png);
     background-size: cover;
     background-position: center;
-    
-    
 }
 
 .recipe-page #top-bar {
+    border-radius: 10px 10px 0px 0px;
+
     box-shadow: inset 0px -6px 5px -1px rgba(0, 0, 0,0.5);
     width: 100%;
     height:2vh;
 }
 
 .recipe-page #left-bar  {
+    
+
     box-shadow: inset -6px 0px 5px -1px rgba(0, 0, 0,0.5);
     height: 100%;
 }
 
 .recipe-page #right-bar  {
+    
+
+
     box-shadow: inset 6px 0px 5px -1px rgba(0, 0, 0,0.5);
     height: 100%;
 }
 
 .recipe-page #bottom-bar {
+    border-radius: 0px 0px 10px 10px;
+
     box-shadow: inset 0px 6px 5px -1px rgba(0, 0, 0,0.5);
     width: 100%;
     height:2vh;
@@ -179,13 +210,15 @@ body  {
 }
 
 .recipe-page #dynamic-contents {
+    
     display: grid;
     grid-template-columns: 1fr 0fr 1fr;
 }
 
 .recipe-page #ingredients {
+    
     /* x-off, y-off, blur, */
-    box-shadow: inset -60px 0px 130px 30px rgb(148, 106, 75);
+    box-shadow: inset -60px 0px 130px 40px rgb(148, 106, 75);
     
     flex: 1;
     overflow-wrap: break-word;
@@ -195,12 +228,12 @@ body  {
 }
 
 .recipe-page #center-line {
-    width:.1vh;
+    width:.2vh;
     background-color: rgb(143, 103, 74);
 }
 
 .recipe-page #directions {
-    box-shadow: inset 60px 0px 130px 30px rgb(148, 106, 75);
+    box-shadow: inset 60px 0px 130px 40px rgb(148, 106, 75);
     flex: 1;
     overflow-wrap: break-word;
     min-width: 0;
@@ -208,9 +241,17 @@ body  {
 }
 
 .recipe-page #ingredient-text {
-    white-space: pre-line
+    color: #251c22;
+    text-shadow: 1px 1px 2px #585858;
+    white-space: pre-line;
+    font-family: Garamond, serif;
+    font-size: 25px
 }
 
 .recipe-page #direction-text {
-    white-space: pre-line
+    color: #251c22;
+    text-shadow: 1px 1px 2px #585858;
+    white-space: pre-line;
+    font-family: Garamond, serif;
+    font-size: 25px
 }
