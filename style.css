@@ -133,13 +133,28 @@ body  {
     height: 100%;
     box-sizing: border-box;
     margin-left: 10%;
+    word-wrap: break-word;
 }
 
 .recipe-page .titleinfoclass {
+    margin: 0;
     color: rgb(0, 0, 0);
-    scale: 90%;
-    font-family: 'Brush Script MT', cursive;
+    font-family: 'Caveat', cursive;
+    font-size: 25px;
+    display: inline-block;
+    font-weight: bold;
     text-shadow: 1px 1px 2px #fffbfb;
+    padding-inline: 20px;
+}
+
+.recipe-page .half-break {
+    height: .5em;
+}
+
+.recipe-page #title {
+    font-size: 40px;
+    margin-top: 2%;
+    margin-right: 20px;
 }
 
 .recipe-page #info-image-padding {
