@@ -114,6 +114,7 @@ body  {
     z-index: 1000;
 }
 
+/*recipe-page section*/
 .recipe-page {
     background-image: url("images/woodtexture.jpg");
 }
@@ -299,5 +300,117 @@ body  {
         display: none;
     }
 }
+
+
+.home-page {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: black;
+}
+
+
+.home-page #banner-container {
+    display:flex;
+    height:30vw;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    
+}
+
+.home-page .banner-text {
+    flex:0 0 auto;
+    font-family: 'Times New Roman', Times, serif;
+    color:rgb(255, 255, 255);
+    z-index: 1;
+    text-shadow: 0 0 8px rgba(241, 181, 255, 0.8), 0 0 10px rgba(255, 255, 255, 0.5);
+    background-color: black;
+}
+
+.home-page #animation-canvas {
+    -webkit-filter: blur(2px);
+    -moz-filter: blur(2px);
+    -o-filter: blur(2px);
+    -ms-filter: blur(2px);
+    filter: blur(2px);
+    position: absolute;
+    height: inherit;
+    width: inherit;
+    z-index: 0;
+    
+}
+
+.home-page #divider {
+    height: 1vw;
+    width: 100%;
+    box-shadow: inset 0px 8px 7px -1px rgba(0, 0, 0,1);
+    background-color: rgba(255, 255, 255, 0.8);
+    
+}
+
+.home-page #projects-label-container {
+    height: 4vw;
+    width: 100%;
+    margin-top: 6vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-page #box-container {
+    display: flex;
+    height: 20vw;
+    width: 100%;
+    
+}
+
+.home-page .box-anchor {
+    
+    padding-bottom: 4%;
+    margin: 4%;
+    flex: 1;
+    height: 100%;
+    border-radius: 3%;
+}
+
+.home-page .box {
+    height: 100%;
+    width: 100%;
+    border-radius: 3%;
+    display: flex;
+    flex:10 1;
+    flex-direction: column;
+    align-items: end;
+
+    overflow: hidden;
+    
+}
+
+.home-page .box-text-container {
+    background-color: rgb(255, 255, 255);
+    background-blend-mode: darken;
+    flex: 1;
+    height:20%;
+    width:100%;
+    text-align: center;
+    box-shadow: inset 0px 0px 30px 5px black;
+}
+
+.home-page .blur-filter-div {
+    filter: blur(2px);
+    box-shadow: inset -60px 0px 130px 40px black;
+}
+
+.home-page .box-text {
+    overflow-wrap: break-word;
+    
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: clamp(18px, 2vw, 25px);
+}
+    
+
 
     
