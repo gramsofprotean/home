@@ -14,13 +14,11 @@ const anichars = [];
 
 const allAnichars = [];
 
-const startX = 960;
-const startY = 288;
+const startX = animCanvas.width/2;
+const startY = animCanvas.height/2;
 
 const startPercX = startX/animCanvas.width
 const startPercY = startY/animCanvas.height
-
-
 
 function spawn_animchar(yOffIn, xOffIn, squadIn,leaderIn){
     anichars.push({
@@ -219,11 +217,6 @@ function animate(timestamp) {
         const deltaY = stateMap[particle.state]["VertVelocity"]*((stateMap[particle.state]["BinaryY"]-percY)/startPercY);
         
         ctx.fillText(particle.char, particle.x, particle.y);
-        
-   
-        
-        
-        
 
         if(particle.leader){
             particle.x += deltaX;
@@ -241,8 +234,6 @@ function animate(timestamp) {
         
         
     }
-
-    
 
   requestAnimationFrame(animate);
 }
