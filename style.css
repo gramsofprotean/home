@@ -410,6 +410,62 @@ body  {
     font-weight: bold;
     font-size: clamp(18px, 2vw, 25px);
 }
+
+.almaveganac-home {
+    background-image: url("images/woodtexture.jpg");
+    background-size: cover;
+}
+
+.almaveganac-home #title-text {
+    background-color: white;
+    padding:0.5%;
+    border-radius: 10%;
+}
+
+.almaveganac-home #recipe-box-container {
+    display: grid;
+    
+    
+    grid-template-columns:  repeat(5, 1fr);
+    width: 100%;
+    gap: 1vw;
+   
+}
+
+.almaveganac-home .recipe-anchor {
+    border-radius: 4%;
+    display: block;
+    height: 15vw; 
+    background-size: cover;
+    box-shadow: inset 0px 0px 50px 1px #ffffff;
+    
+    
+}
+
+.almaveganac-home .recipe-box {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    height:inherit;
+    width: inherit;
+}
+
+.almaveganac-home .recipe-box-label-container {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: end;
+    flex: 1;
+    font-size: x-large;
+    word-break: break-word;
+    color: white;
+    text-shadow: #044f19 2px 0px 10px;
+
+    width: 80%;
+    height:40%;
+}
+
+
     
 
 
