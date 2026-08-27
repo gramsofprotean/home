@@ -11,8 +11,6 @@ body  {
 
 /* cross-stitch-designer section */
 .cross-stitch-designer-page .controls {
-
-
     margin-bottom: 20px;
 }   
 
@@ -72,11 +70,11 @@ body  {
     
     /* FOR OLD BROWSERS */
     top: 0vh;
-    left: 14vh;
+    left: 17vh;
 
     /* FOR NEW DYNAMIC BROWSERS */
     top: 0dvh;
-    left: 14dvh;
+    left: 17dvh;
 }
 
 .cross-stitch-designer-page #pencil {
@@ -92,27 +90,44 @@ body  {
     left: 0dvh;
 }
 
+.cross-stitch-designer-page #viewButton {
+    position: fixed;
+    z-index: 1000;
+    
+    /* FOR OLD BROWSERS */
+    top: 0vh;
+    left: 25vh;
+
+    /* FOR NEW DYNAMIC BROWSERS */
+    top: 0dvh;
+    left: 25dvh;
+}
+
 .cross-stitch-designer-page #showHideControls {
     position: fixed;
     z-index: 1000;
     
     /* FOR OLD BROWSERS */
     top: 0vh;
-    right: 25vh;
+    right: 40vh;
 
     /* FOR NEW DYNAMIC BROWSERS */
     top: 0dvh;
-    right: 28dvh;
+    right: 40dvh;
 }
 
 .cross-stitch-designer-page #tempMobile {
     position: fixed;
+    z-index: 1000;
+
     bottom: 5vh;
     left: 5vh;
+
     bottom: 5dvh;
     left: 5dvh;
-    z-index: 1000;
 }
+
+
 
 /*recipe-page section*/
 .recipe-page {
@@ -465,6 +480,7 @@ body  {
     height:40%;
 }
 
+/*NEXT START HERE*/
 
     
 

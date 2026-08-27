@@ -1,6 +1,7 @@
 const stateMap = {
     drawing: 0,
     erasing: 1,
+    viewing: 2,
 }
 
 let state = stateMap['drawing']
@@ -31,6 +32,8 @@ const tempMobile = document.getElementById('tempMobile');
 const eraserButton = document.getElementById('eraser');
 
 const pencilButton = document.getElementById('pencil');
+
+const viewButton = document.getElementById('viewButton');
 
 //rect for pixel canvas
 const rect = pixelCanvas.getBoundingClientRect();
@@ -65,12 +68,14 @@ function makeGrid(rows, cols) {
 
             pixel.addEventListener('click', function(){
 
+                
                 const pressDuration = Date.now() - pressStartTime;
 
                 
                 if(pressDuration>200) return;
-
+                
                 if(state==stateMap['drawing']){
+                    
                     pixel.style.backgroundColor = colorPicker.value;
                     const label = pixel.querySelector('img');
                     if(label){
@@ -98,7 +103,7 @@ function makeGrid(rows, cols) {
 const pCanvasTop = pixelCanvas.style.top;
 const pCanvasLeft = pixelCanvas.style.left;
 
-console.log(pCanvasTop, pCanvasLeft)
+
 
 function extractPixels(file) {
     return new Promise((resolve,reject) => {
@@ -199,8 +204,10 @@ pixelCanvas.addEventListener('dragstart', function(event){
 });
 
 pixelCanvas.addEventListener('pointerdown', function(event){
-    if(!panEnabled) return;
+    
     pressStartTime = Date.now();
+
+    if(!panEnabled) return;
     mouse_dragging = true;
 
     startPosX = event.clientX;
@@ -276,6 +283,10 @@ eraserButton.addEventListener('click', function(){
 
 pencilButton.addEventListener('click', function(){
     state = stateMap['drawing'];
+});
+
+viewButton.addEventListener('click', function(){
+    state = stateMap['viewing'];
 });
 
 
