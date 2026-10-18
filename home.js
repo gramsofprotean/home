@@ -6,7 +6,7 @@ const pagesMap = {
 
     "vfl-studio":{
         "text":"VFL NN Model Studio",
-        "link":"VFL NN Model Studio/Main-Page.html",
+        "link":"vfl-nn-model-studio/Main-Page.html",
         "image":"images/page-box-icons/vfl-studio-boxart.png"},
 
     "cross-stitch-designer":{
