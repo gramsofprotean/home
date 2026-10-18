@@ -1,5 +1,5 @@
 import * as benutils from "@benp2325/benutils";
-import { rawCsvData } from "../Data/Sorted/sample-non-vfl/housing.js";
+import { rawCsvData } from "./housing.js";
 
 const RunButton = document.getElementById("RunButton");
 const RankingsBox = document.getElementById("PlayerRankings");
