@@ -1,8 +1,14 @@
 const boxContainer = document.getElementById('box-container')
 
-pages = ["cross-stitch-designer", "almaveganac", "vfl-studio"]
+pages = ["vfl-studio", "cross-stitch-designer", "almaveganac"]
 
 const pagesMap = {
+
+    "vfl-studio":{
+        "text":"VFL NN Model Studio",
+        "link":"VFL NN Model Studio/Main-Page.html",
+        "image":"images/page-box-icons/vfl-studio-boxart.png"},
+
     "cross-stitch-designer":{
         "text":"Cross Stitch Designer / Pixel Art->Cross Stitch Converter",
         "link":"cross-stitch-designer.html",
@@ -11,14 +17,7 @@ const pagesMap = {
     "almaveganac":{
         "text":"Almaveganac | Vegan Recipe Archvie",
         "link":"almaveganac.html",
-        "image":"images/page-box-icons/almaveganac-boxart.png"},
-
-    "vfl-studio":{
-        "text":"VFL NN Model Studio",
-        "link":"VFL NN Model Studio/Main-Page.html",
-        "image":"images/page-box-icons/vfl-studio-boxart.png"}
-
-    
+        "image":"images/page-box-icons/almaveganac-boxart.png"}
 }
 
 for(const page of pages){
