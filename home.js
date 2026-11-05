@@ -5,7 +5,7 @@ pages = ["vfl-studio", "cross-stitch-designer", "almaveganac"]
 const pagesMap = {
 
     "vfl-studio":{
-        "text":"VFL NN Model Studio",
+        "text":"VAL NN Model Studio",
         "link":"./vfl-nn-model-studio/VFL Predictor Website/Main-Page.html",
         "image":"images/page-box-icons/vfl-studio-boxart.png"},
 
