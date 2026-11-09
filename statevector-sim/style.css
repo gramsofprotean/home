@@ -1,0 +1,155 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    
+}
+
+.menu {
+    box-shadow: inset 0 0 0 1px black;
+}
+
+.top-panel{
+    flex: 2;
+    display: flex;
+}
+
+.dragables-menu {
+    flex: 1;
+    background-color: gray;
+}
+
+.qubit-view-menu {
+    flex: 3;
+    background-color: lightblue;
+}
+
+.qubit-container {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.qubit {
+    r: 4%; 
+    fill: rgb(255, 0, 0);
+    cursor: pointer;
+}
+
+.qubit-label {
+    font-size: clamp(.05rem, 2vw, 1rem);
+}
+
+.value-label {
+    font-size: clamp(1.25rem, 2vw, 2rem);
+}
+
+.output-menu {
+    flex: 1;
+    background-color: lightgray;
+    display: flex;
+    flex-direction: column;
+}
+
+.output-text-container {
+    flex: 1;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.histogram-container {
+    padding: 5px;
+    padding-bottom: 30%;
+}
+
+.bottom-panel {
+    flex: 1;
+    display: flex;
+}
+
+.timeline-menu {
+    text-align: center;
+    flex: 4;
+    background-color: rgb(110, 108, 108);
+    align-items: center;
+}
+
+.timeline-container {
+    display: flex;
+    height: 30%;
+    width: 100%;
+    background-color: rgb(59, 59, 59);
+}
+
+.timeline {
+    display: flex;
+}
+
+.actions-menu {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    background-color: rgb(12, 25, 209);
+}
+
+.measure-buttons-container {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+}
+
+.button{
+    flex: 1;
+    font-weight: bold;
+}
+
+.ground-qubits-button {
+    flex: 1;
+    height: 100%;
+    padding: 2%;
+}
+
+.add-qubit-button {
+    padding: 2%;
+}
+
+.sub-qubit-button {
+    padding: 2%;
+}
+
+.dragables-menu {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    width: 25%;
+    background-color: rgb(75, 73, 73);
+}
+
+.spacer {
+    flex: 1;
+ 
+    background-color: gray;
+}
+
+.gate {
+    cursor: pointer;
+    padding: 5px;
+    width: 50%;
+    height: 50%;
+    background-color: rgb(110, 108, 108);
+}
+
+.cnot {
+    width: 50%;
+    height: 50%;
+    background-color: rgb(75, 73, 73);
+}

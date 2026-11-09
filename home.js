@@ -1,8 +1,12 @@
 const boxContainer = document.getElementById('box-container')
 
-pages = ["vfl-studio", "cross-stitch-designer", "almaveganac"]
+pages = ["statevector-sim", "vfl-studio", "cross-stitch-designer", "almaveganac"]
 
 const pagesMap = {
+    "statevector-sim":{
+        "text":"Qubit Circuit Sim",
+        "link":"./statevector-sim/index.html",
+        "image":"images/page-box-icons/statevector-sim-boxart.png"},
 
     "vfl-studio":{
         "text":"VAL NN Model Studio",
