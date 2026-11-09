@@ -1,6 +1,6 @@
 const boxContainer = document.getElementById('box-container')
 
-pages = ["statevector-sim", "vfl-studio", "cross-stitch-designer", "almaveganac"]
+const pages = ["statevector-sim", "vfl-studio", "cross-stitch-designer", "almaveganac"];
 
 const pagesMap = {
     "statevector-sim":{
